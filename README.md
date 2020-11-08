@@ -15,3 +15,4 @@ Discord Bot.
 - [ ] Bee Movie Filter
 - [ ] Memes
 - [ ] Conversational
+- [ ] Cat Facts
