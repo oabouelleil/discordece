@@ -16,3 +16,4 @@ Discord Bot.
 - [ ] Memes
 - [ ] Conversational
 - [ ] Cat Facts
+- [ ] Lecture Tracker
