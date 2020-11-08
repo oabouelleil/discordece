@@ -1,22 +1,19 @@
 require('dotenv-flow').config();
 
 const discord = require("discord.js");
+const client = new discord.Client();
 
 const config = require("./config.json");
-// const utils = require("./utils/util.js");
+const commandBase = require('./commands/command-base');
+const loadCommands = require('./commands/load-commands');
+const loadFeatures = require('./features/load-features')
 
-const client = new discord.Client();
-// const util = new utils.Utils(client, process.cwd());
 module.exports = {client, config};
 
-client.commands = new discord.Collection();
-client.aliases = new discord.Collection();
-
-// util.loadModules("events");
-// util.loadModules("commands", true);
-
-client.on('ready', () => {
+client.on('ready', async () => {
     console.log("Logged in as " + client.user.tag + "!")
+
+
 });
 
 client.login(process.env.TOKEN).then(r => {
